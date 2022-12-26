@@ -1,0 +1,17 @@
+<div class="form-group">
+  <input type="text"
+        class="form-control mb-3" 
+        placeholder="Daterangepicker"
+        bsDaterangepicker 
+        [(ngModel)]="rangeDate"
+        (bsValueChange)="dateChanged($event)"
+    />
+  <pre *ngIf="rangeDate"
+       class="code-preview">from {{rangeDate[0] | date}} to {{rangeDate[1] | date}}</pre>
+</div>
+<div style="display: block">
+    <canvas baseChart
+      [data]="doughnutChart"
+      [type]="doughnutChartType">
+    </canvas>
+</div>
