@@ -2,4 +2,4 @@ export const environment = {
   production: true
 };
 
-export const URL_SERVICES = 'https://rest-api-ecommerce-production.up.railway.app/api/';
+export const URL_SERVICES = 'https://ecommerce-shoper.onrender.com/api/';
